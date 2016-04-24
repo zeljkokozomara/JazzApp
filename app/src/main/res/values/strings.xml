@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">JazzApp</string>
+
+    <string name="btn_post">POST</string>
+    <string name="jazz_url">http://mobilejazz.com/jobs/apply​</string>
+
+    <!-- JSON name - value pairs -->
+    <string name="json_name_key">name</string>
+    <string name="json_name_value">Zeljko (Jack) Kozomara</string>
+
+    <string name="json_email_key">email</string>
+    <string name="json_email_value">zeljkok@shaw.ca</string>
+
+    <string name="json_about_key">about</string>
+    <string name="json_about_value"></string>
+
+    <!-- JSON array of reference strings key -->
+    <string name="json_urls_key">urls</string>
+
+    <string name="json_resume_key">Resume</string>
+    <string name="json_resume_value">http://sites.google.com/site/zeljkokshared/work/resumes/ZeljkoKozomara_ResumeConcise.pdf</string>
+
+    <string name="json_linkedin_key">Linkedin Profile</string>
+    <string name="json_linkedin_value">https://www.linkedin.com/in/zeljko-kozomara-0abab7a8?trk=hp-identity-name</string>
+
+    <string name="json_codesamples_key">Code Samples</string>
+    <string name="json_codesamples_value">http://sites.google.com/site/zeljkokshared/work/code-samples</string>
+
+    <string name="json_photosite_key">Photo Site</string>
+    <string name="json_photosite_value">http://http://autumnsky.zenfolio.com/</string>
+</resources>
