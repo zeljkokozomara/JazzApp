@@ -20,6 +20,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -80,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 conn.setDoOutput(true);
 
                 // 3. set content type
+                conn.setRequestProperty("Accept", "application/json");
                 conn.setRequestProperty("Content-Type", "application/json");
 
                 // 4. build jsonObject with our job application as per specs
@@ -96,10 +100,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // 7. check if it worked out
                 int response = conn.getResponseCode();
-                if (response == HttpURLConnection.HTTP_OK)
-                   result = "Jazz Application sent successfully";
-                else
-                   result = "Jazz Application not sent. Server response: " + Integer.toString(response);
+
+                result = "Jazz Application Server response: " + Integer.toString(response) + ". Message: " +
+                        conn.getResponseMessage();
+
+                if (response != HttpURLConnection.HTTP_OK)
+                {
+                    // iterate the response header to see what we got.  Notably, 301 as result of POST request
+                    // might be ok!
+                    Map<String, List<String>> hfs = conn.getHeaderFields();
+                    Iterator it = hfs.entrySet().iterator();
+                    while (it.hasNext() )
+                    {
+                        Map.Entry pair = (Map.Entry)it.next();
+                        String strKey = (String)pair.getKey();
+
+                        // Some implementations (notably HttpURLConnection) include a mapping for the null key;
+                        // in HTTP's case, this maps to the HTTP status line and is treated as being at position 0 when indexing into the header fields.
+                        if (null != strKey)
+                        {
+                             Log.d(TAG, "Header Key: " + strKey);
+                             Log.d(TAG, "Values: ");
+
+                             List<String> lst = (List<String>)(pair.getValue() );
+                             Iterator lit = lst.iterator();
+                                while (lit.hasNext() )
+                                {
+                                    Log.d(TAG, (String)(lit.next() ));
+
+                                    // also note weird redirect in Location -- seems like jazz server
+                                    // is adding %e2%80%8b
+                                }
+                            }
+                        }
+                    }
+
             }
             catch (Exception ex)
             {
@@ -121,6 +156,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         protected void onPostExecute(String result)
         {
             Toast.makeText(getBaseContext(), result, Toast.LENGTH_LONG).show();
+            Log.d(TAG, result);
+
         }
 
         // utility to build JSON message
@@ -151,10 +188,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             vals.put(c.getString(R.string.json_photosite_key), c.getString(R.string.json_photosite_value) );
 
             // 5. This code git repository
+            vals.put(c.getString(R.string.json_appsource_key), c.getString(R.string.json_appsource_value) );
 
-            // stick in array
+            // stick in array of references
             refs.put(vals);
             json.put(c.getString(R.string.json_urls_key), refs);
+
+            // Teams we are applying for
+            JSONArray teams = new JSONArray();
+
+            teams.put(0, c.getString(R.string.json_team_android));
+            teams.put(1, c.getString(R.string.json_team_windows));
+            teams.put(2, c.getString(R.string.json_team_backend));
+            teams.put(3, c.getString(R.string.json_team_design));
+
+            json.put(c.getString(R.string.json_teams_key), teams);
 
             // and return full string, which will be sent over httpUrlConnection
             return json.toString();

@@ -12,9 +12,13 @@
     <string name="json_email_value">zeljkok@shaw.ca</string>
 
     <string name="json_about_key">about</string>
-    <string name="json_about_value"></string>
+    <string name="json_about_value">An Engineer with 20+ years of experience in software industry. Formal University education with degrees in Structural Engineering and Computer Sciences. Worked for major international players across North America. Cross-platform and multi-language expertise.  Organized, resourceful with very strong analytical skills.
 
-    <!-- JSON array of reference strings key -->
+Currently on sabbatical, but interested in being part of your team as solving problems and computer industry is part of lifestyle. Really liked submission process and applying for consideration across several teams;  Android or Win is preferred. Java code that sent this application is in git &#8212; see one of "urls" JSON strings.  Compensation is not of prime importance, but interesting work and flexibility is.
+
+Oh yes, also like Barca a lot even if I have never been to Nou Camp. Too bad Atletico knocked them out of Champions League</string>
+
+    <!-- JSON array of reference strings -->
     <string name="json_urls_key">urls</string>
 
     <string name="json_resume_key">Resume</string>
@@ -28,4 +32,17 @@
 
     <string name="json_photosite_key">Photo Site</string>
     <string name="json_photosite_value">http://http://autumnsky.zenfolio.com/</string>
+
+    <string name="json_appsource_key">Android java source that sent this application</string>
+    <string name="json_appsource_value">https://github.com/zeljkokozomara/JazzApp/blob/master/app/src/main/java/zeljkok/autumnsky/jazzapp/MainActivity.java</string>
+
+
+    <!-- JSON array of teams we are applying for -->
+    <string name="json_teams_key">teams</string>
+
+    <string name="json_team_android">android</string>
+    <string name="json_team_windows">windows</string>
+    <string name="json_team_backend">backend</string>
+    <string name="json_team_design">design</string>
+
 </resources>

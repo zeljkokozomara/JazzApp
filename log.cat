@@ -1,0 +1,45 @@
+--------- beginning of main
+04-24 02:16:15.503 13534 13811 D MobileJazz.Application: {"name":"Zeljko (Jack) Kozomara","email":"zeljkok@shaw.ca","about":"An Engineer with 20+ years of experience in software industry. Formal University education with degrees in Structural Engineering and Computer Sciences. Worked for major international players across North America. Cross-platform and multi-language expertise. Organized, resourceful with very strong analytical skills. Currently on sabbatical, but interested in being part of your team as solving problems and computer industry is part of lifestyle. Really liked submission process and applying for consideration across several teams; Android or Win is preferred. Java code that sent this application is in git — see one of urls JSON strings. Compensation is not of prime importance, but interesting work and flexibility is. Oh yes, also like Barca a lot even if I have never been to Nou Camp. Too bad Atletico knocked them out of Champions League","urls":[{"Resume":"http:\/\/sites.google.com\/site\/zeljkokshared\/work\/resumes\/ZeljkoKozomara_ResumeConcise.pdf","Code Samples":"http:\/\/sites.google.com\/site\/zeljkokshared\/work\/code-samples","Linkedin Profile":"https:\/\/www.linkedin.com\/in\/zeljko-kozomara-0abab7a8?trk=hp-identity-name","Photo Site":"http:\/\/http:\/\/autumnsky.zenfolio.com\/","Android java source that sent this application":"https:\/\/github.com\/zeljkokozomara\/JazzApp\/blob\/master\/app\/src\/main\/java\/zeljkok\/autumnsky\/jazzapp\/MainActivity.java"}],"teams":["android","windows","backend","design"]}
+04-24 02:16:16.025 13534 13811 D MobileJazz.Application: Header Key: Cache-Control
+04-24 02:16:16.025 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.025 13534 13811 D MobileJazz.Application: max-age=172800
+04-24 02:16:16.025 13534 13811 D MobileJazz.Application: Header Key: Connection
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Keep-Alive
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Header Key: Content-Length
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: 250
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Header Key: Content-Type
+04-24 02:16:16.026 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.066 13534 13811 D MobileJazz.Application: text/html; charset=iso-8859-1
+04-24 02:16:16.066 13534 13811 D MobileJazz.Application: Header Key: Date
+04-24 02:16:16.066 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Mon, 25 Apr 2016 00:19:52 GMT
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Header Key: Expires
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Wed, 27 Apr 2016 00:19:52 GMT
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Header Key: Keep-Alive
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: timeout=5, max=100
+04-24 02:16:16.067 13534 13811 D MobileJazz.Application: Header Key: Location
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: https://mobilejazz.com/jobs/apply%e2%80%8b
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Header Key: Server
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Apache/2.4.7 (Ubuntu)
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Header Key: X-Android-Received-Millis
+04-24 02:16:16.081 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: 1461485776019
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: Header Key: X-Android-Response-Source
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: NETWORK 301
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: Header Key: X-Android-Selected-Protocol
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.082 13534 13811 D MobileJazz.Application: http/1.1
+04-24 02:16:16.092 13534 13811 D MobileJazz.Application: Header Key: X-Android-Sent-Millis
+04-24 02:16:16.092 13534 13811 D MobileJazz.Application: Values: 
+04-24 02:16:16.092 13534 13811 D MobileJazz.Application: 1461485775678
+04-24 02:16:16.110 13534 13534 D MobileJazz.Application: Jazz Application Server response: 301. Message: Moved Permanently
+04-24 02:16:16.211 13534 13555 W EGL_emulation: eglSurfaceAttrib not implemented
+04-24 02:16:16.211 13534 13555 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xad81ff40, error=EGL_SUCCESS
+04-24 02:16:19.621 13534 13555 E Surface : getSlotFromBufferLocked: unknown buffer: 0xabfa5020
